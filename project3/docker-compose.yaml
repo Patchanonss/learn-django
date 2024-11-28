@@ -1,0 +1,23 @@
+services:
+  db_postgres:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: root
+    ports:
+      - "4000:5432"
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:7070
+    volumes:
+      - .:/code
+    ports:
+      - "7070:8000"
+    depends_on:
+      - db_postgres
+
+volumes:
+  postgres_data:

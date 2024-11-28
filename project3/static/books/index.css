@@ -1,0 +1,64 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  background-color: #f4f7fa; /* Light background color */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+header h1 {
+  color: #222; /* Darker heading color */
+  font-size: 3rem; /* Large heading for emphasis */
+  font-weight: 700; /* Bold heading */
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #666; /* Lighter gray for intro text */
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+a.btn-view-books {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  border-radius: 30px; /* Rounded button corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+a.btn-view-books:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888; /* Lighter gray for footer text */
+}
+
+footer p {
+  margin: 10px 0;
+}
